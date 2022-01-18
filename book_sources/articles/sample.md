@@ -106,7 +106,7 @@
 ### 象限
   - X: 做事步調快慢
   - Y: 以事為主/以人為主
-### [分類圖](https://i.imgur.com/4FIfPn7.png)
+### [分類圖] <img src="https://i.imgur.com/4FIfPn7.png">
 
 ### 支配型主管(Dominance)
 - 獅子
