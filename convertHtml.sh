@@ -1,12 +1,12 @@
 #!/bin/bash
-cd book_sources
+cd mindmap
 filelist=$(find $(pwd) -maxdepth 3 -type f  \( -name "*.md" \) | sort )
 for filename in $filelist
 do
   xpath=${filename%/*}
   xbase=${filename##*/}
   xpref=${xbase%.*}
-  outputPath=${xpath/book_sources/book_sources\/_book}
+  outputPath=${xpath/mindmap/_book\/mindmap}
   outputFullPath=${outputPath}/${xpref}.html
   
   echo "input :${filename}"

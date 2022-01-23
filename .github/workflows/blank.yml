@@ -12,15 +12,26 @@ on:
 jobs:
   main-to-gh-pages:
     runs-on: ubuntu-latest
-        
+
     steps:                          
     - name: checkout main
       uses: actions/checkout@v2
+      with:
+          submodules: true
             
     - name: install nodejs
       uses: actions/setup-node@v1
       
-    - name: configue gitbook 📚
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+          hugo-version: '0.89.4'
+          extended: true
+          
+    - name: Run Hugo
+      run: hugo --destination _book
+      
+    - name: configue markmap 📚
       run: |
         npm install -g markmap-cli          
                 
@@ -28,7 +39,7 @@ jobs:
       run: |
         chmod +x ./convertHtml.sh
         "./convertHtml.sh"
-                
+            
     - name: push _book to branch gh-pages 🚀
       env:
         TOKEN: ${{ secrets.PERSONAL_TOKEN }}
@@ -36,7 +47,7 @@ jobs:
         MYEMAIL: "@Csongs"
         MYNAME: ${{github.repository_owner}}          
       run: |
-        cd  ./book_sources/_book
+        cd  ./_book
         git config --global user.email "${MYEMAIL}"
         git config --global user.name "${MYNAME}"
         git init
