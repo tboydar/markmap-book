@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mindmap on Markmap Book</title>
+    <link>https://csongs.github.io/markmap-book/tags/mindmap/</link>
+    <description>Recent content in mindmap on Markmap Book</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Mon, 24 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://csongs.github.io/markmap-book/tags/mindmap/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>markmap &#43; github page</title>
+      <link>https://csongs.github.io/markmap-book/post/2022-01-17-manage-up/</link>
+      <pubDate>Mon, 24 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://csongs.github.io/markmap-book/post/2022-01-17-manage-up/</guid>
+      
+        <description>&lt;p&gt;因為gitmind要錢了,只好say byebye&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>向上管理(Manage up)</title>
+      <link>https://csongs.github.io/markmap-book/post/2022-01-24-markmapbook/</link>
+      <pubDate>Mon, 17 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://csongs.github.io/markmap-book/post/2022-01-24-markmapbook/</guid>
+      
+        <description>&lt;p&gt;聽演講內容分享&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>
